@@ -11,13 +11,36 @@
     <!-- signup/signin togggle -->   
       <header>
 
-        <input type="radio" name="sign" value="signin" id="signin">
-        <label for="signin">Sign In</label>
+        <input type="radio" id="sign-in" name="sign" value="sign_in" checked>
+        <label for="sign-in">Sign In</label>
 
-        <input type="radio" name="sign" value="signup" id="signup">
-        <label for="signup">Sign Up</label>
-        
+        <input type="radio" id="sign-up" name="sign" value="sign_up">
+        <label for="sign-up">Sign Up</label>
+
       </header>
+
+      <div class="sign_in_form">
+        <h1>Sign In</h1>
+        <form action="#" method="post">
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="password" required>
+          <input type="submit" value="Sign In">
+        </form>
+        
+        <p>Dont have account?  <label for="sign-up">Sign Up Here</label></p>
+      </div>
+
+      <div class="sign_up_form">
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+          <input type="text" placeholder="Full Name" required>
+          <input type="text" placeholder="Email Address" required>
+          <input type="password" placeholder="password" required>
+          <input type="submit" value="Sign Up">
+        </form>
+        
+        <p>Already have account?  <label for="sign-in">Sign In Here</label></p>
+      </div>
    </div>
 
     <script src="./index.mjs" type="module"></script>
